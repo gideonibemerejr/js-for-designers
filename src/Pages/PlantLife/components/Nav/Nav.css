@@ -1,4 +1,4 @@
-nav {
+nav.PL-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,8 +15,12 @@ nav {
   justify-content: center;
 }
 
-nav a {
+nav.PL-nav a {
   color: #fff;
   text-decoration: none;
   margin: 5px 32px;
+}
+
+a.PL-back {
+  font-size: 20px;
 }

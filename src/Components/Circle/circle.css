@@ -6,9 +6,9 @@
   height: 20px;
   border-radius: 50%;
   background: linear-gradient(45deg, #000, #000 100%),
-    linear-gradient(135deg, #a5cf6f, #a5cf6f),
+    linear-gradient(135deg, #9b51e0, #9b51e0),
     linear-gradient(225deg, #9b51e0, #9b51e0),
-    linear-gradient(225deg, #f2994a, #f2994a);
+    linear-gradient(225deg, #000, #000);
   background-size: 50% 50%;
   background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
   background-repeat: no-repeat;

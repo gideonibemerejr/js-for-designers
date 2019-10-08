@@ -21,7 +21,7 @@ class PlantLife extends Component {
 
     render() { 
         return ( 
-            <>
+            <div className="fade">
             <Nav />
             <main className={this.state.menuIsOpen ? 'PL-main open' : 'PL-main'}>
                 <p onClick={this.handleMenuClick} className="PL-toggle-nav">
@@ -37,14 +37,14 @@ class PlantLife extends Component {
                     }
                 </p>
                 <Switch>
-                    <Route exact path="/plant-life" render={() => (<Home {...this.state} handleMenuClick={this.handleMenuClick}/>)} />
+                    <Route exact path="/plant-life" render={() => (<Home  {...this.state} handleMenuClick={this.handleMenuClick}/>)} />
                     <Route path="/plant-life/shop" render={() => (<div>Shop</div>)} />
                     <Route path="/plant-life/about" render={() => (<div>About</div>)} />
                     <Route path="/plant-life/help" render={() => (<div>Help</div>)} />
                     <Route path="/plant-life/blog" render={() => (<div>Blog</div>)} />
                 </Switch>
             </main>
-            </>
+            </div>
          );
     }
 }

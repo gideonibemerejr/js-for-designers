@@ -46,3 +46,15 @@ p.PL-toggle-nav img {
   margin-right: 1rem;
   vertical-align: -15%;
 }
+.fade {
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

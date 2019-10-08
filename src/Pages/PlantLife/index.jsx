@@ -24,12 +24,9 @@ class PlantLife extends Component {
             <>
             <Nav />
             <main className={this.state.menuIsOpen ? 'PL-main open' : 'PL-main'}>
-                <p onClick={this.handleMenuClick} className="toggle-nav">
-                    {
-                        this.state.menuIsOpen ? (
-                            <>
-                            <img src={close} alt=""/>
-                            Close
+                <a onClick={this.handleMenuClick} className="PL-toggle-nav">
+                    {this.state.menuIsOpen ? (
+                            <><img src={close} alt=""/>Close
                             </>
                         ) : (
 <>
@@ -38,7 +35,7 @@ class PlantLife extends Component {
                             </>
                         )
                     }
-                </p>
+                </a>
                 <Switch>
                     <Route exact path="/plant-life" render={() => (<Home {...this.state} handleMenuClick={this.handleMenuClick}/>)} />
                     <Route path="/plant-life/shop" render={() => (<div>Shop</div>)} />

@@ -8,6 +8,10 @@
   src: url(./assets/youngserif.woff), url(./assets/youngserif.woff2);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main.PL-main {
   position: relative;
   z-index: 1;
@@ -23,11 +27,22 @@ main.PL-main {
   background-color: #fff;
   color: #2a2a2a;
 }
+
 main.PL-main.open {
   transform: translate(240px, 0);
 }
 
-p.toggle-nav {
-  cursor: pointer;
+a.PL-toggle-nav {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  padding: 0;
   margin: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a.PL-toggle-nav img {
+  margin-right: 1rem;
+  vertical-align: -15%;
 }

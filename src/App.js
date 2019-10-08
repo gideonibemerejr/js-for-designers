@@ -13,7 +13,7 @@ function App() {
         <Route exact path="/" component={HomePage} />
         
         <Route 
-          exact path="/plant-life" 
+          path="/plant-life" 
           component={PlantLife} 
           /> 
        

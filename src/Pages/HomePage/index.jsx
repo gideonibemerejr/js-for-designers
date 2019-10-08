@@ -10,7 +10,7 @@ const HomePage = () => {
         <nav className="HomePage-navbar">
           
           <ul className="HomePage-nav">
-          <a target="_blank" rel="noopener noreferrer" href="/"  className="HomePage-link">JS for Designers</a>
+          <a  href="/"  className="HomePage-link">JS for Designers</a>
             <li>
               <a className="HomePage-link" href="#Projects">Projects</a> 
             </li>

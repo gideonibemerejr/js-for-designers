@@ -10,9 +10,9 @@ Each project is created as a separate React Component held in the `Pages/` direc
 
 ## Projects
 
-### What What Was Learned
+### Learning Objectives
 
-Overall I learned these six ideas:
+During the course I learned:
 
 - New context for how modern Javascript (ES6+) can work, from variables and strings to arrays and objects
 - Working with smooth animation, transitions, and delays to make web designs look better

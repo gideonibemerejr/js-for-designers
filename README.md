@@ -1,6 +1,10 @@
 # JS for Designers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)! Big shout out to them.
+
+Each project is a separate lesson on an important javascript fundamental when coding and designing the front-end of a web application.
 
 ## Getting Started: Development
 

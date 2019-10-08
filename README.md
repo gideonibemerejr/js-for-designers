@@ -8,8 +8,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Each project is created as a separate React Component held in the `Pages/` directory and is a separate lesson covering important javascript fundamentals when coding and designing the front-end of a web application. Check their descriptions below for an deeper understanding.
 
-## Projects
-
 ### Learning Objectives
 
 During the course I learned:
@@ -20,6 +18,8 @@ During the course I learned:
 - New context for how to work with browser interactions such as clicks, hovers, mouse movements and scroll events
 - Add in subtle and not-so-subtle parallax effects to web designs
 - Confidence in web design decisions.
+
+## Projects
 
 ### Plant Life
 

@@ -58,8 +58,8 @@
 }
 
 .App-link:hover {
-  color: #09d3ac;
-  border-bottom: 2px solid #09d3ac;
+  color: #9b51e0;
+  border-bottom: 2px solid #9b51e0;
   transition: color 0.5s;
 }
 
@@ -131,7 +131,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .App-header {
     background-image: none;
   }
@@ -139,8 +139,7 @@
     width: 100%;
   }
   .App-header--text > h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
   }
 }
 

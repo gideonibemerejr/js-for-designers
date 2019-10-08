@@ -14,6 +14,9 @@ function App() {
             <li>
               <a className="App-link" href="#Projects">Projects</a> 
             </li>
+            <li>
+              <a href="https://www.gideonjr.com"></a><div className="circle"></div>
+            </li>
             
           </ul>
         </nav>
@@ -23,8 +26,17 @@ function App() {
             <h1>
             Javascript for Designers
             </h1>
+            <blockquote cite="https://www.superhi.com/courses/javascript-for-designers">
+
+            <p>
+            "Javascript is one of the most used languages in the world but its learning curve is relatively steep." 
+            </p> 
+            <footer>–SuperHi, <cite>Javascript for Designers</cite></footer>
+            </blockquote>
+        
             <h4>
-            Javascript is one of the most used languages in the world but its learning curve is relatively steep. In a short course by <a className="App-link" href="www.superhi.com">SuperHi</a>, I learned how to work with Javascript in a creative, fun way aimed at people who design.
+          
+            In a short course by <a className="App-link" href="https://www.superhi.com">SuperHi</a>, I learned how to work with Javascript in a creative, fun way aimed at people who design.
             
             </h4>
           </article>
@@ -37,7 +49,7 @@ function App() {
       <main id="Projects" className="App-projects-list">
         <div  className="App-section-heading">
         <h2>Projects</h2>
-        <p>These projects were completed with <a className="App-link" href="www.superhi.com"><i>SuperHi</i></a></p>
+        <p>These projects were completed with <a className="App-link" href="https://www.superhi.com"><i>SuperHi</i></a></p>
         </div>
         {
           data.map((project, idx) => (

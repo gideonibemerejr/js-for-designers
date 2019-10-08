@@ -1,3 +1,12 @@
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 section.PL-home {
   display: flex;
   align-items: center;
@@ -30,4 +39,20 @@ a.PL-button {
   text-decoration: none;
   padding: 0.75rem 1rem;
   border-radius: 0.25rem;
+}
+
+div.PL-home--slides {
+  height: 475px;
+  position: relative;
+}
+
+div.PL-home--slides img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+div.PL-home--slides img:first-child {
+  z-index: 1;
 }

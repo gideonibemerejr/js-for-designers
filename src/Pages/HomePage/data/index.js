@@ -2,7 +2,7 @@ const data = [
     {
         title: 'Plant Life',
         description: 'We go further with Javascript events by adding in click, mouseover and mouseout events, plus talking about how to add randomness into our design work.',
-        image: './assets/plant-life.png',
+        image: './assets/plant-life/plant-life.png',
         link: '/plant-life',
     },
     {

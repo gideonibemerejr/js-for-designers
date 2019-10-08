@@ -19,7 +19,7 @@ main.PL-main {
   min-height: 100vh;
 
   transition: transform 0.5s;
-  overflow: hidden;
+
   font-family: 'IBM Plex Mono';
   font-size: 16px;
   line-height: 1.6;

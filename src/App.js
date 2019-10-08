@@ -11,12 +11,12 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        {/* 
+        
         <Route 
           exact path="/plant-life" 
           component={PlantLife} 
           /> 
-        */}
+       
         {/* 
         <Route 
         exact path="/type-checker" 

@@ -1,5 +1,5 @@
 import HomePage from "./HomePage"
-import PlantLife from "./PlantLife"
+import PlantLife from './PlantLife'
 
 
 

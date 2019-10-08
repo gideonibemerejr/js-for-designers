@@ -1,4 +1,4 @@
-.App-header {
+.HomePage-header {
   min-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   background-position: 100% 50%;
 }
 
-.App-navbar {
+.HomePage-navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,92 +19,98 @@
   height: 10vh;
 }
 
-.App-navbar,
-.App-project-card,
-.App-section-heading {
+.HomePage-navbar,
+.HomePage-project-card,
+.HomePage-section-heading {
   padding: 0 0 4rem 0;
 }
+.HomePage-section-heading {
+  display: flex;
+  flex-direction: column;
 
-.App-header,
-.App-projects-list {
+  width: 75%;
+}
+
+.HomePage-header,
+.HomePage-projects-list {
   padding: 0 4rem;
 }
 
-.App-projects-list {
+.HomePage-projects-list {
   padding-top: 4rem;
   background-color: #282c34;
   color: white;
   height: 100%;
 }
 
-.App-nav {
+.HomePage-nav {
   display: flex;
   flex-direction: row;
   list-style: none;
   padding: 0;
 }
 
-.App-nav > li {
+.HomePage-nav > li {
   margin-left: 2rem;
 }
 
-.App-link {
+.HomePage-link {
   color: inherit;
   text-decoration: none;
   padding-bottom: 0.25rem;
 }
 
-.App-link:hover {
+.HomePage-link:hover {
   color: #9b51e0;
   border-bottom: 2px solid #9b51e0;
   transition: color 0.5s;
 }
 
-.App-project-card {
+.HomePage-project-card {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.App-project-card:nth-child(odd) {
+.HomePage-project-card:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.App-project-card--text {
+.HomePage-project-card--text {
   width: 40%;
 }
-.App-project-card--item {
+.HomePage-project-card--item {
   width: 60%;
 
   margin: 0;
 }
 
-.App-project-card--text {
+.HomePage-project-card--text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 4rem;
 }
-.App-project-card:nth-child(odd) .App-project-card--text {
+.HomePage-project-card:nth-child(even) .HomePage-project-card--text {
   margin: 0 0 0 4rem;
 }
-.App-project-card--image {
+.HomePage-project-card--image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.App-header--content {
+.HomePage-header--content {
   width: 100%;
   height: 80vh;
   display: flex;
 }
 
-.App-header--text {
+.HomePage-header--text {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.App-header-arrow {
+.HomePage-header-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,31 +123,34 @@
 ====================================*/
 
 @media screen and (max-width: 1160px) {
-  .App-project-card,
-  .App-project-card:nth-child(odd) {
+  .HomePage-project-card,
+  .HomePage-project-card:nth-child(even) {
     display: flex;
     flex-direction: column;
     padding-bottom: 4rem;
   }
 
-  .App-project-card--text,
-  .App-project-card--item,
-  .App-project-card:nth-child(odd) .App-project-card--text {
+  .HomePage-project-card--text,
+  .HomePage-project-card--item,
+  .HomePage-project-card:nth-child(even) .HomePage-project-card--text {
     width: 100%;
     margin: 0;
   }
 }
 @media screen and (max-width: 960px) {
-  .App-header--text > h1 {
+  .HomePage-header--text > h1 {
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .App-header {
+  .HomePage-header {
     background-image: none;
   }
-  .App-header--text {
+  .HomePage-header--text {
+    width: 100%;
+  }
+  .HomePage-section-heading {
     width: 100%;
   }
 }

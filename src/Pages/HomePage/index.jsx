@@ -1,27 +1,27 @@
 import React from 'react'
 import { Circle } from '../../Components'
 import data from './data'
-import '../../App.css';
+import './HomePage.css';
 
 const HomePage = () => {
     return ( 
         <>
-      <header className="App-header">
-        <nav className="App-navbar">
+      <header className="HomePage-header">
+        <nav className="HomePage-navbar">
           
-          <ul className="App-nav">
-          <a href="/"  className="App-link">JS for Designers</a>
+          <ul className="HomePage-nav">
+          <a target="_blank" rel="noopener noreferrer" href="/"  className="HomePage-link">JS for Designers</a>
             <li>
-              <a className="App-link" href="#Projects">Projects</a> 
+              <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="#Projects">Projects</a> 
             </li>
   
             
           </ul>
-          <a href="https://www.gideonjr.com"><Circle /></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.gideonjr.com"><Circle /></a>
         </nav>
       
-        <section className="App-header--content">
-          <article className="App-header--text">
+        <section className="HomePage-header--content">
+          <article className="HomePage-header--text">
             <h1>
             Javascript for Designers
             </h1>
@@ -35,30 +35,30 @@ const HomePage = () => {
         
             <p>
           
-            In a short course by <a className="App-link" href="https://www.superhi.com">SuperHi</a>, I learned how to work with Javascript in a creative, fun way aimed at people who design.
+            In a short course by <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com">SuperHi</a>, I learned how to work with Javascript in a creative, fun way aimed at people who design. Then, I used React to implement extra features outside of the SuperHi scope.
             
             </p>
           </article>
          
         </section>
-        <section className="App-header-arrow">
-          <a href="#Projects"><img src="./assets/chevron-down.svg" alt="Chevron Down"/></a>
+        <section className="HomePage-header-arrow">
+          <a target="_blank" rel="noopener noreferrer" href="#Projects"><img src="./assets/chevron-down.svg" alt="Chevron Down"/></a>
         </section>
       </header>
-      <main id="Projects" className="App-projects-list">
-        <div  className="App-section-heading">
+      <main id="Projects" className="HomePage-projects-list">
+        <div  className="HomePage-section-heading">
         <h2>Projects</h2>
-        <p>These projects were completed with <a className="App-link" href="https://www.superhi.com"><i>SuperHi</i></a></p>
+        <p>These projects were completed with <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com"><i>SuperHi</i></a>'s Javascript for Designers course and extended using React. Checkout the repository for this entire project <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://github.com/gideonibemerejr/js-for-designers"><i>here</i></a>.</p>
         </div>
         {
           data.map((project, idx) => (
-          <section className="App-project-card">
-            <div className="App-project-card--text">
+          <section className="HomePage-project-card">
+            <div className="HomePage-project-card--text">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
             </div>
-            <div className="App-project-card--item">
-              <img className="App-project-card--image" src={`${project.image}`} alt="Plant Life Project Screenshot"/>
+            <div className="HomePage-project-card--item">
+              <img className="HomePage-project-card--image" src={`${project.image}`} alt="Plant Life Project Screenshot"/>
             </div>
           </section>
           ))

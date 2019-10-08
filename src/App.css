@@ -1,18 +1,71 @@
 .App {
-  text-align: center;
+  width: 100%;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.App-navbar {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.App-navbar,
+.App-project-card {
+  margin-bottom: 4rem;
+}
+
+.App-header,
+.App-projects-list {
+  margin: 0 4rem;
+}
+
+.App-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+
+.App-nav > li {
+  margin-left: 2rem;
 }
 
 .App-link {
   color: #09d3ac;
+  text-decoration: none;
+}
+
+.App-project-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.App-project-card--text,
+.App-project-card--item {
+  width: 50%;
+  max-height: 572px;
+  margin: 0;
+}
+.App-project-card--item {
+  margin-left: 2rem;
+}
+.App-project-card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.App-project-card--image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

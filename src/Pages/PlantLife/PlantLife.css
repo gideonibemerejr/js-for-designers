@@ -32,7 +32,7 @@ main.PL-main.open {
   transform: translate(240px, 0);
 }
 
-a.PL-toggle-nav {
+p.PL-toggle-nav {
   position: fixed;
   top: 30px;
   left: 30px;
@@ -42,7 +42,7 @@ a.PL-toggle-nav {
   cursor: pointer;
 }
 
-a.PL-toggle-nav img {
+p.PL-toggle-nav img {
   margin-right: 1rem;
   vertical-align: -15%;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  Route, Link, Switch} from 'react-router-dom'
+import {  Route,  Switch} from 'react-router-dom'
 import { Nav } from './components'
 import { Home } from './components'
 import open from './assets/menu.svg'
@@ -24,7 +24,7 @@ class PlantLife extends Component {
             <>
             <Nav />
             <main className={this.state.menuIsOpen ? 'PL-main open' : 'PL-main'}>
-                <a onClick={this.handleMenuClick} className="PL-toggle-nav">
+                <p onClick={this.handleMenuClick} className="PL-toggle-nav">
                     {this.state.menuIsOpen ? (
                             <><img src={close} alt=""/>Close
                             </>
@@ -35,7 +35,7 @@ class PlantLife extends Component {
                             </>
                         )
                     }
-                </a>
+                </p>
                 <Switch>
                     <Route exact path="/plant-life" render={() => (<Home {...this.state} handleMenuClick={this.handleMenuClick}/>)} />
                     <Route path="/plant-life/shop" render={() => (<div>Shop</div>)} />

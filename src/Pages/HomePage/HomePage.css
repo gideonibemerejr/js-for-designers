@@ -18,17 +18,14 @@ code {
     monospace;
 }
 
-.HomePage > h1 {
+.HomePage-header--text > h1 {
   color: #9b51e0;
   font-size: 4rem;
 }
-.HomePage > h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.HomePage-header--text > h1,
+.HomePage-project-card--text > h3,
+.HomePage-project-card--text > p {
+  margin-bottom: 1rem;
 }
 
 .HomePage > blockquote {

@@ -19,8 +19,8 @@ const Home = (props) => {
     return ( 
         <section className='PL-home'>
             <div className="PL-home--slides">
-            {/* <img src={plant1} srcSet={`${plant1}, ${plant1_2x}`} alt=""/> */}
-                images
+            <img src={plant1} srcSet={`${plant1}, ${plant1_2x}`} alt=""/>
+                
             </div>
             <div className="PL-home--content">
                <h1>Plant set</h1>

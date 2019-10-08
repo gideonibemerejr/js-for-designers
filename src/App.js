@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   console.log(data)
   return (
-    <div className="App">
+    <>
       <header className="App-header">
         <nav className="App-navbar">
           
@@ -36,11 +36,11 @@ function App() {
             <footer>–SuperHi, <cite>Javascript for Designers</cite></footer>
             </blockquote>
         
-            <h4>
+            <p>
           
             In a short course by <a className="App-link" href="https://www.superhi.com">SuperHi</a>, I learned how to work with Javascript in a creative, fun way aimed at people who design.
             
-            </h4>
+            </p>
           </article>
          
         </section>
@@ -69,7 +69,15 @@ function App() {
           
          
         </main>
-    </div>
+        {/* <footer>
+          <section>
+            <h4>
+              Credits
+            </h4>
+            <p>Hero illustration courtesy of SuperHi, colors updated by Gideon Ibemere, Jr</p>
+          </section>
+        </footer> */}
+    </>
   );
 }
 

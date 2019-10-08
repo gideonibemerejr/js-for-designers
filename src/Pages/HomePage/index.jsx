@@ -10,7 +10,10 @@ const HomePage = () => {
         <nav className="HomePage-navbar">
           
           <ul className="HomePage-nav">
-          <a  href="/"  className="HomePage-link">JS for Designers</a>
+            <li>
+            
+            <a  href="/"  className="HomePage-link">JS for Designers</a>
+            </li> 
             <li>
               <a className="HomePage-link" href="#Projects">Projects</a> 
             </li>
@@ -25,19 +28,18 @@ const HomePage = () => {
             <h1>
             Javascript for Designers
             </h1>
+            <p>
+          
+            In a short course by <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com"><i>SuperHi</i></a>, I learned how to work with Javascript in a creative, fun way aimed at people who design. Then, I used <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org"><i>React</i></a> to implement extra features outside of the SuperHi scope.
+            
+            </p>
             <blockquote cite="https://www.superhi.com/courses/javascript-for-designers">
 
             <p>
-            "Javascript is one of the most used languages in the world but its learning curve is relatively steep." 
+            Javascript is one of the most used languages in the world but its learning curve is relatively steep. 
             </p> 
             <footer>–SuperHi, <cite>Javascript for Designers</cite></footer>
             </blockquote>
-        
-            <p>
-          
-            In a short course by <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com">SuperHi</a>, I learned how to work with Javascript in a creative, fun way aimed at people who design. Then, I used React to implement extra features outside of the SuperHi scope.
-            
-            </p>
           </article>
          
         </section>
@@ -48,7 +50,7 @@ const HomePage = () => {
       <main id="Projects" className="HomePage-projects-list">
         <div  className="HomePage-section-heading">
         <h2>Projects</h2>
-        <p>These projects were completed with <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com"><i>SuperHi</i></a>'s Javascript for Designers course and extended using React. Checkout the repository for this entire project <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://github.com/gideonibemerejr/js-for-designers"><i>here</i></a>.</p>
+        <p>These projects were completed with <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com"><i>SuperHi</i></a>'s <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com/courses/javascript-for-designers"><i>Javascript for Designers</i></a> course and extended using React. Checkout the Github repository for this entire project <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://github.com/gideonibemerejr/js-for-designers"><i>here</i></a>.</p>
         </div>
         {
           data.map((project, idx) => (

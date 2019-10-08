@@ -1,3 +1,6 @@
+blockquote {
+  margin: 0 1rem 0 1rem;
+}
 .HomePage-header {
   min-height: 70vh;
   display: flex;
@@ -51,17 +54,17 @@
 }
 
 .HomePage-nav > li {
-  margin-left: 2rem;
+  margin-right: 1rem;
 }
 
 .HomePage-link {
   color: inherit;
-  text-decoration: none;
   padding-bottom: 0.25rem;
 }
 
 .HomePage-link:hover {
   color: #9b51e0;
+  text-decoration: none;
   border-bottom: 2px solid #9b51e0;
   transition: color 0.5s;
 }
@@ -152,6 +155,16 @@
   }
   .HomePage-section-heading {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .HomePage-header {
+    padding: 0 2rem;
+  }
+
+  .HomePage-projects-list {
+    padding: 2rem 2rem 0;
   }
 }
 

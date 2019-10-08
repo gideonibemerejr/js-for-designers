@@ -21,6 +21,16 @@ Overall I learned these six ideas:
 - Add in subtle and not-so-subtle parallax effects to web designs
 - Confidence in web design decisions.
 
+### Plant Life
+
+### Type Checker
+
+### Jenna Buchholz
+
+### Brux
+
+### Words of Womxn
+
 ## Getting Started: Development
 
 In the project directory, you can run:

@@ -1,4 +1,7 @@
 import React from 'react';
+
+
+import {Circle} from './Components'
 import data from './data'
 import './App.css';
 
@@ -8,17 +11,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <nav className="App-navbar">
-          <a href="/"  className="App-link">JS for Designers</a>
+          
           <ul className="App-nav">
-           
+          <a href="/"  className="App-link">JS for Designers</a>
             <li>
               <a className="App-link" href="#Projects">Projects</a> 
             </li>
-            <li>
-              <a href="https://www.gideonjr.com"></a><div className="circle"></div>
-            </li>
+  
             
           </ul>
+          <a href="https://www.gideonjr.com"><Circle /></a>
         </nav>
       
         <section className="App-header--content">

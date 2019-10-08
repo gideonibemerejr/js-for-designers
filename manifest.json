@@ -1,0 +1,22 @@
+{
+  "name": "JS for Designers | Gideon Ibemere, Jr",
+  "short_name": "JS for Designers",
+  "description": "A portfolio of projects from SuperHi's JS for Designers course. Each project was refactored on the fly as a React component",
+  "categories": ["design", "software engineering", "web development"],
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

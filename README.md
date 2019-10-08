@@ -2,9 +2,24 @@
 
 ## Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)! Big shout out to them.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Each project is a separate lesson on an important javascript fundamental when coding and designing the front-end of a web application.
+"Despite being used on pretty much every website on the internet, Javascript is actually one of the tougher languages to learn. In this short course, we specifically talk about Javascript targeted towards what a creative professional would use it for – functional and fun, interactive websites." - taken from SuperHi's short description of the course.
+
+Each project is created as a separate React Component held in the `Pages/` directory and is a separate lesson covering important javascript fundamentals when coding and designing the front-end of a web application. Check their descriptions below for an deeper understanding.
+
+## Projects
+
+### What What Was Learned
+
+Overall I learned these six ideas:
+
+- New context for how modern Javascript (ES6+) can work, from variables and strings to arrays and objects
+- Working with smooth animation, transitions, and delays to make web designs look better
+- Context. Making design changes, on the fly, as a user scrolls upa and down the page
+- New context for how to work with browser interactions such as clicks, hovers, mouse movements and scroll events
+- Add in subtle and not-so-subtle parallax effects to web designs
+- Confidence in web design decisions.
 
 ## Getting Started: Development
 

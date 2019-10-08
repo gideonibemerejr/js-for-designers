@@ -18,11 +18,11 @@ code {
     monospace;
 }
 
-h1 {
+.HomePage > h1 {
   color: #9b51e0;
   font-size: 4rem;
 }
-h1,
+.HomePage > h1,
 h2,
 h3,
 h4,
@@ -31,7 +31,7 @@ h6 {
   margin: 0;
 }
 
-blockquote {
+.HomePage > blockquote {
   margin: 0 1rem 0 1rem;
 }
 .HomePage-header {
@@ -114,6 +114,7 @@ blockquote {
 
 .HomePage-project-card--text {
   width: 40%;
+  margin-bottom: 2rem;
 }
 .HomePage-project-card--item {
   width: 60%;
@@ -169,11 +170,14 @@ li > a.HomePage-link {
     padding-bottom: 4rem;
   }
 
-  .HomePage-project-card--text,
-  .HomePage-project-card--item,
-  .HomePage-project-card:nth-child(even) .HomePage-project-card--text {
+  .HomePage-project-card--item {
     width: 100%;
     margin: 0;
+  }
+  .HomePage-project-card--text,
+  .HomePage-project-card:nth-child(even) .HomePage-project-card--text {
+    width: 100%;
+    margin: 0 0 2rem 0;
   }
 }
 @media screen and (max-width: 960px) {

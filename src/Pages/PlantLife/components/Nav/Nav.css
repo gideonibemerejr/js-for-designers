@@ -21,6 +21,7 @@ nav.PL-nav a {
   margin: 5px 32px;
 }
 
-a.PL-back {
+nav.PL-nav a.PL-back {
+  margin-top: 2rem;
   font-size: 20px;
 }

@@ -10,7 +10,6 @@ const Nav = () => {
            <Link to="/plant-life/about" >About</Link>
            <Link to="/plant-life/help" >Help</Link>
            <Link to="/plant-life/blog" >Blog</Link>
-           <br />
            <Link className="PL-back" to="/" >JS For Designers</Link>
         </nav>
      );

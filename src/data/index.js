@@ -1,4 +1,4 @@
-exports.data = [
+const data = [
     {
         title: 'Plant Life',
         description: 'We go further with Javascript events by adding in click, mouseover and mouseout events, plus talking about how to add randomness into our design work.',
@@ -25,8 +25,10 @@ exports.data = [
     },
     {
         title: 'Words of Womxn',
-        description: 'We tie all of our learnings together by adding layers of Javascript to a project to take it from something static into a dynamic, fun site.',
-        image: './assets/type-checker/assets/type-checker.png',
+        description: 'We tie all of our learnings together by adding layers of Javascript to a project to take it from something static into a dynamic, fun site.',        
+        image: './assets/words-of-womxn/assets/words-of-womxn.png',
         link: '',
     },
 ]
+
+export default data

@@ -40,7 +40,7 @@ class PlantLife extends Component {
                     }
                 </p>
                 <Switch>
-                    <Route exact path="/plant-life" render={() => (<Home />)} />
+                    <Route exact path="/plant-life" render={({props}) => (<Home />)} />
                     <Route path="/plant-life/shop" render={() => (<div>Shop</div>)} />
                     <Route path="/plant-life/about" render={() => (<div>About</div>)} />
                     <Route path="/plant-life/help" render={() => (<div>Help</div>)} />

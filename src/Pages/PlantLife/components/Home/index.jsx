@@ -3,11 +3,12 @@ import plant1 from '../../assets/plant1.jpg'
 import plant1_2x from '../../assets/plant1-2x.jpg'
 
 const Home = (props) => {
+    const {menuIsOpen, handleMenuClick} = props;
     useEffect(() => {
-        if (props.menuIsOpen) {
-            props.handleMenuClick()
+        if (menuIsOpen) {
+            handleMenuClick()
         } else {
-         return  
+         return 
         }
     }, [])
     return ( 

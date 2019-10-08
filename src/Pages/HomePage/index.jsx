@@ -56,7 +56,7 @@ const HomePage = () => {
         {
           data.map((project, idx) => (
          
-            <section className="HomePage-project-card">
+            <section key={idx} className="HomePage-project-card">
               <div className="HomePage-project-card--text">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>

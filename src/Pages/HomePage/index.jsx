@@ -12,7 +12,7 @@ const HomePage = () => {
           <ul className="HomePage-nav">
           <a target="_blank" rel="noopener noreferrer" href="/"  className="HomePage-link">JS for Designers</a>
             <li>
-              <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="#Projects">Projects</a> 
+              <a className="HomePage-link" href="#Projects">Projects</a> 
             </li>
   
             
@@ -42,7 +42,7 @@ const HomePage = () => {
          
         </section>
         <section className="HomePage-header-arrow">
-          <a target="_blank" rel="noopener noreferrer" href="#Projects"><img src="./assets/chevron-down.svg" alt="Chevron Down"/></a>
+          <a  href="#Projects"><img src="./assets/chevron-down.svg" alt="Chevron Down"/></a>
         </section>
       </header>
       <main id="Projects" className="HomePage-projects-list">

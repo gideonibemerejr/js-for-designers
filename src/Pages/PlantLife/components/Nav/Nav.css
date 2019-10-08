@@ -1,0 +1,22 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: #00b98d;
+  color: #fff;
+
+  font-family: 'Young Serif';
+  font-size: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 32px;
+}

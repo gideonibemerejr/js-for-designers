@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { Circle } from '../../Components'
 import data from './data'
 import './HomePage.css';
@@ -54,15 +55,20 @@ const HomePage = () => {
         </div>
         {
           data.map((project, idx) => (
-          <section className="HomePage-project-card">
-            <div className="HomePage-project-card--text">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-            </div>
-            <div className="HomePage-project-card--item">
-              <img className="HomePage-project-card--image" src={`${project.image}`} alt="Plant Life Project Screenshot"/>
-            </div>
-          </section>
+         
+            <section className="HomePage-project-card">
+              <div className="HomePage-project-card--text">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <div>
+                <Link className="HomePage-link" to={project.link}>See Project</Link>
+                </div>
+              </div>
+              <div className="HomePage-project-card--item">
+                <img className="HomePage-project-card--image" src={`${project.image}`} alt="Plant Life Project Screenshot"/>
+              </div>
+            </section>
+         
           ))
         }
           

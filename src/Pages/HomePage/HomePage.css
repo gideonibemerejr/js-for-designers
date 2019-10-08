@@ -91,6 +91,7 @@ blockquote {
 }
 
 .HomePage-link {
+  display: inline;
   color: inherit;
   padding-bottom: 0.1rem;
 }

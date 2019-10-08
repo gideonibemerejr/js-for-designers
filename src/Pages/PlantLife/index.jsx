@@ -2,21 +2,43 @@ import React, { Component } from 'react';
 import {  Route, Link, Switch} from 'react-router-dom'
 import { Nav } from './components'
 import { Home } from './components'
-import hamburger from './assets/menu.svg'
+import open from './assets/menu.svg'
+import close from './assets/close.svg'
 
 import './PlantLife.css'
 
 class PlantLife extends Component {
-    state = {  }
+    state = { 
+        menuIsOpen: false,
+     }
+
+
+    handleMenuClick = () => {
+        this.setState({
+            menuIsOpen: !this.state.menuIsOpen
+        })
+    }
+
     render() { 
         return ( 
             <>
             <Nav />
-            <main>
-                <a href="#" className="toggle-nav">
-                    <img src={hamburger} alt=""/>
-                    Menu
-                </a>
+            <main className={this.state.menuIsOpen ? 'open' : ''}>
+                <p onClick={this.handleMenuClick} className="toggle-nav">
+                    {
+                        this.state.menuIsOpen ? (
+                            <>
+                            <img src={close} alt=""/>
+                            Close
+                            </>
+                        ) : (
+<>
+                            <img src={open} alt=""/>
+                            Menu
+                            </>
+                        )
+                    }
+                </p>
                 <Switch>
                     <Route exact path="/plant-life" render={() => (<Home />)} />
                     <Route path="/plant-life/shop" render={() => (<div>Shop</div>)} />

@@ -7,8 +7,11 @@
   font-family: 'Young Serif';
   src: url(./assets/youngserif.woff), url(./assets/youngserif.woff2);
 }
-
+p {
+  margin: 0;
+}
 body {
+  overflow: hidden;
   font-family: 'IBM Plex Mono';
   font-size: 16px;
   line-height: 1.6;
@@ -22,4 +25,13 @@ main {
   z-index: 1;
   background-color: #fff;
   min-height: 100vh;
+
+  transition: transform 0.5s;
+}
+main.open {
+  transform: translate(240px, 0);
+}
+
+p.toggle-nav {
+  cursor: pointer;
 }

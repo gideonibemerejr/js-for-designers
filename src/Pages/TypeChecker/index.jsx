@@ -9,9 +9,10 @@ class TypeChecker extends Component {
         sentence: ''
      }
 
- 
+    //  Handle the text input change
     handleTextChange = e => {
         this.setState({
+            // The current event target's name prop should have the same name on state so that the value can be set dynamically
             [e.currentTarget.name]: e.currentTarget.value
         })
     }
@@ -19,7 +20,11 @@ class TypeChecker extends Component {
         console.log(this.state.sentence)
         return ( 
             <div className="type-checker">
+
+                {/* passing the onChange handlers as props to the control panel */}
                <ControlPanel handleTextChange={this.handleTextChange} />
+
+               {/* Spreading the entire state object to be received as props in the output */}
                <Output {...this.state} />
             </div>
          );

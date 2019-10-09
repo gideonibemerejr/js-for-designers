@@ -23,7 +23,7 @@ During the course I learned:
 
 ### Plant Life
 
-Plant Life is an extremely basic online shop for people who need plants. Currently there is a menu that renders pages. The Home page features a product set at a cost of \$599. The product images fray at random on mouseover and retract to and orderly stack on mouseout. This project makes use of refs in react as well as React class based Components instead of Hooks to handle a bug where the menu stays open once you navigate to a page.
+Plant Life is an extremely basic online shop for people who need plants. Currently there is a menu that renders FIVE (5) pages. The Home page features a product set at a cost of $599. The product images separate at random on mouseover and retract to and orderly stack on mouseout. This project makes use of React refs as well as React class based Components instead of Hooks to handle a bug where the menu stays open once you navigate to a page. Additionally, it uses ES6 arrow functions to handle most of the interactivity on the page.
 
 ### Type Checker
 

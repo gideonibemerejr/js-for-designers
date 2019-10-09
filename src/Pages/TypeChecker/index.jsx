@@ -4,12 +4,22 @@ import { Output, ControlPanel } from './components'
 import "./TypeChecker.css"
 
 class TypeChecker extends Component {
-    state = {  }
+    state = { 
+        sentence: ''
+     }
+
+
+    handleTextChange = e => {
+        this.setState({
+            [e.currentTarget.name]: e.currentTarget.value
+        })
+    }
     render() { 
+        console.log(this.state.sentence)
         return ( 
             <div className="type-checker">
-               <ControlPanel />
-               <Output />
+               <ControlPanel handleTextChange={this.handleTextChange} />
+               <Output {...this.state} />
             </div>
          );
     }

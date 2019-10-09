@@ -50,11 +50,42 @@ p.PL-toggle-nav img {
   animation: fade 1s;
 }
 
+div.PL-mobile-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 1rem;
+
+  background-color: #00b98d;
+  color: #fff;
+  text-align: center;
+}
+
+div.PL-mobile-error > h1,
+div.PL-mobile-error > h2 {
+  font-family: 'Young Serif';
+  margin-bottom: 1rem;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  div.PL-mobile-error {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  div.plant-life {
+    display: none;
   }
 }

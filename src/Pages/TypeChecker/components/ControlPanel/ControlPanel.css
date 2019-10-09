@@ -1,4 +1,4 @@
-section.control-panel {
+section.control-panel--wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@ section.control-panel {
   border-right: 1px solid #444;
 }
 
-div.option {
+div.control {
   margin-top: 1.5rem;
 }
 

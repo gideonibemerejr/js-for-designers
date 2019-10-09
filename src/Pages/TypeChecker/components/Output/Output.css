@@ -1,10 +1,10 @@
-section.output {
+section.text-output--wrapper {
   grid-column-start: 2;
   width: 100%;
 }
 
 textarea.text-output {
-  font-size: 14rem;
+  font-size: 4rem;
   width: 100%;
   background: none;
   color: #fff;

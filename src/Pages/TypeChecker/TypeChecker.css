@@ -17,12 +17,12 @@
   src: url('./assets/faune-bold.woff'), url('./assets/faune-bold.woff2');
 }
 
-div.type-checker > h1 {
+div.type-checker--wrapper > h1 {
   font-weight: 700;
   font-size: 1.5rem;
 }
 
-div.type-checker {
+div.type-checker--wrapper {
   font-family: 'Faune', Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -33,6 +33,6 @@ div.type-checker {
   grid-template-columns: 280px 1fr;
 }
 
-div.type-checker > section {
+div.type-checker--wrapper > section {
   display: block;
 }

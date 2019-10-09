@@ -19,13 +19,13 @@ class TypeChecker extends Component {
     render() { 
         console.log(this.state.sentence)
         return ( 
-            <div className="type-checker">
+            <div className="type-checker--wrapper">
 
                 {/* passing the onChange handlers as props to the control panel */}
-               <ControlPanel handleTextChange={this.handleTextChange} />
+               <ControlPanel handleTextChange={this.handleTextChange} {...this.state} />
 
                {/* Spreading the entire state object to be received as props in the output */}
-               <Output {...this.state} />
+               <Output {...this.state} handleChange={this.handleTextChange}/>
             </div>
          );
     }

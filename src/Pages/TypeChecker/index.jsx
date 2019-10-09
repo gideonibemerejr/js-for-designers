@@ -8,7 +8,7 @@ class TypeChecker extends Component {
         defaultSentence: 'The quick brown fox jumps over the lazy dog',
         sentence: '',
         typeFace: '',
-        typeSize: '',
+        typeSize: null,
         fontWeight: '',
         leading: '',
         italic: false,
@@ -20,8 +20,19 @@ class TypeChecker extends Component {
     //  Handle the text input change
     handleTextChange = e => {
         this.setState({
-            // The current event target's name prop should have the same name on state so that the value can be set dynamically
+
+            // Updating state dynamically with computed properties
             [e.currentTarget.name]: e.currentTarget.value
+
+        })
+    }
+    
+    handleTypeSizeChange = e => {
+        this.setState({
+
+            // Updating state dynamically with computed properties
+            [e.currentTarget.name]: e.currentTarget.value
+
         })
     }
     render() { 

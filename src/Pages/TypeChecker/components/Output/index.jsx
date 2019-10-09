@@ -3,11 +3,12 @@ import './Output.css'
 
 
 const Output = ({sentence, defaultSentence}) => {
-    return ( 
+    return (
         <section className="output">
-            {/* Check if there is isn't a sentence. If there is NOT sentence typed, then display the default sentence */}
-          {sentence === '' ? defaultSentence : sentence}
-        </section>
+
+            <textarea className="text-output" value={sentence === '' ? defaultSentence : sentence} />
+        </section> 
+
      );
 }
  

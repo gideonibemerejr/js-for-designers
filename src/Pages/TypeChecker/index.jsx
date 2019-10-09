@@ -5,10 +5,11 @@ import "./TypeChecker.css"
 
 class TypeChecker extends Component {
     state = { 
+        defaultSentence: 'The quick brown fox jumps over the lazy dog',
         sentence: ''
      }
 
-
+ 
     handleTextChange = e => {
         this.setState({
             [e.currentTarget.name]: e.currentTarget.value

@@ -2,10 +2,10 @@ import React from 'react'
 import './Output.css'
 
 
-const Output = () => {
+const Output = ({sentence, defaultSentence}) => {
     return ( 
         <section className="output">
-            The quick brown fox jumps over the lazy dog
+          {sentence === '' ? defaultSentence : sentence}
         </section>
      );
 }

@@ -17,7 +17,7 @@ const Option = ({htmlFor, type, name, label, placeholder, handleChange}) => {
     return ( 
         <div className="option">
             <label htmlFor={htmlFor}>{label}</label>
-            <input onChange={handleChange} placeholder={placeholder} type={type} name={name}/>
+            <input onChange={handleChange} placeholder={placeholder}  type={type} name={name}/>
         </div> 
     );
 }

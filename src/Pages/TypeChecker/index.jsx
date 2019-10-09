@@ -6,7 +6,15 @@ import "./TypeChecker.css"
 class TypeChecker extends Component {
     state = { 
         defaultSentence: 'The quick brown fox jumps over the lazy dog',
-        sentence: ''
+        sentence: '',
+        typeFace: '',
+        typeSize: '',
+        fontWeight: '',
+        leading: '',
+        italic: false,
+        colors: [],
+        activeColor: '',
+
      }
 
     //  Handle the text input change
@@ -22,7 +30,7 @@ class TypeChecker extends Component {
             <div className="type-checker--wrapper">
 
                 {/* passing the onChange handlers as props to the control panel */}
-               <ControlPanel handleTextChange={this.handleTextChange} {...this.state} />
+               <ControlPanel {...this.state} handleTextChange={this.handleTextChange}/>
 
                {/* Spreading the entire state object to be received as props in the output */}
                <Output {...this.state} handleChange={this.handleTextChange}/>

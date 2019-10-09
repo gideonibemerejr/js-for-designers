@@ -48,7 +48,7 @@ class Home extends Component {
 
         // * Pick the right image
 
-        //sets the z-index to the current slide such that it is higher than the previous
+        //sets the z-index of the current slide such that it is higher than the previous
         this.images[currentSlide].style.zIndex = z
 
         // adds the keyframes fade animation to the currently visibile slide such that it nicely fades in

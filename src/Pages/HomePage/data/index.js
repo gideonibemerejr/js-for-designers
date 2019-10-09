@@ -8,7 +8,7 @@ const data = [
     {
         title: 'Type Checker',
         description: 'With Type Checker, we discuss how to work with form tags such as inputs, sliders, checkboxes and select boxes to build up interactivity to our projects.',
-        image: './assets/type-checker/assets/type-checker.png',
+        image: './assets/type-checker/type-checker.png',
         link: '',
     },
     {

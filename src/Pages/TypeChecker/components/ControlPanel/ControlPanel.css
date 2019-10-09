@@ -20,10 +20,41 @@ label {
   margin-bottom: 0.5rem;
 }
 
+input[type='range'],
+input[type='text'],
+select {
+  width: 100%;
+}
+
 input[type='text'] {
   padding: 0.65rem;
-  width: 100%;
+
   background-color: #575757;
   border: none;
   color: #fff;
+}
+
+label[for='italic'] {
+  display: inline;
+  margin: 0;
+}
+
+div.control:nth-of-type(6) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.control > div.colors {
+  display: flex;
+}
+
+div.colors p {
+  width: 2rem;
+  height: 2rem;
+  line-height: 1.625rem;
+  text-align: center;
+  margin: 0 8px 0 0;
+  border-radius: 50%;
+  border: 2px solid #444;
 }

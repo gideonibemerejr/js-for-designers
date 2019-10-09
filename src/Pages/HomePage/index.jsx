@@ -6,7 +6,7 @@ import './HomePage.css';
 
 const HomePage = () => {
     return ( 
-      <div className="HomePage">
+      <div className="HomePage fade">
         <header className="HomePage-header">
           <nav className="HomePage-navbar">
             

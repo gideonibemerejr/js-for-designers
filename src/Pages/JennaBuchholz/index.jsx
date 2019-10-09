@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 
 
-class TypeChecker extends Component {
+class JennaBuchholz extends Component {
     state = {  }
     render() { 
         return ( 
-            <div>Type Checker</div>
+            <div>Jenna Buchholz</div>
          );
     }
 }
  
-export default TypeChecker;
+export default JennaBuchholz;

@@ -9,25 +9,25 @@ const data = [
         title: 'Type Checker',
         description: 'With Type Checker, we discuss how to work with form tags such as inputs, sliders, checkboxes and select boxes to build up interactivity to our projects.',
         image: './assets/type-checker/type-checker.png',
-        link: '',
+        link: '/type-checker',
     },
     {
         title: 'Jenna Buchholz',
         description: 'With this project, we go in depth into scroll events and parallax by adding progress bars, waypoints and thresholds.',
         image: './assets/jenna-buchholz/assets/jenna-buchholz.png',
-        link: '',
+        link: '/jenna-buchholz',
     },
     {
         title: 'Brux',
         description: 'We extend our Javascript events knowledge by talking more about scroll and mouse movement events to add design elements such as fade on scroll and eyes that follow your cursor.',
         image: './assets/brux/assets/brux.png',
-        link: '',
+        link: '/brux',
     },
     {
         title: 'Words of Womxn',
         description: 'We tie all of our learnings together by adding layers of Javascript to a project to take it from something static into a dynamic, fun site.',        
         image: './assets/words-of-womxn/assets/words-of-womxn.png',
-        link: '',
+        link: '/words-of-womxn',
     },
 ]
 

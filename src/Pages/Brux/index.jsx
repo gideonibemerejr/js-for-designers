@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 
 
-class TypeChecker extends Component {
+class Brux extends Component {
     state = {  }
     render() { 
         return ( 
-            <div>Type Checker</div>
+            <div>Brux</div>
          );
     }
 }
  
-export default TypeChecker;
+export default Brux;

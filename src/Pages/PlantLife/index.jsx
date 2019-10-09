@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {  Route,  Switch} from 'react-router-dom'
-import { Nav } from './components'
-import { Home } from './components'
+import { Nav, Home } from './components'
 import open from './assets/menu.svg'
 import close from './assets/close.svg'
 

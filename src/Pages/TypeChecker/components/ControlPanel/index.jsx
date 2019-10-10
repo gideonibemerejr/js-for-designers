@@ -1,7 +1,7 @@
 import React from 'react'
 import './ControlPanel.css'
 
-const ControlPanel = ({ handleChange, sentence, typeSize, leading, italic, typefaces, typeFace}) => {
+const ControlPanel = ({ handleChange, sentence, typeSize, leading, italic, typefaces, typeFace, fontWeight}) => {
     return ( 
         <section className="control-panel--wrapper">
             <h1>Type Checker</h1>
@@ -16,10 +16,10 @@ const ControlPanel = ({ handleChange, sentence, typeSize, leading, italic, typef
             <Control key={3} name="typeSize" htmlFor="typeSize" label="Type size" type="range"  min={12} max={200} defaultValue={64} value={typeSize} handleChange={handleChange} />
            
             {/* Font Weight Control */}
-            <Control key={4} name="fontWeight" htmlFor="fontWeight" label="Font weight" type="range"  min={100} max={900} />
+            <Control key={4} name="fontWeight" htmlFor="fontWeight" label="Font weight" type="range"  min={100} max={900} step={100} defaultValue={400} value={fontWeight} handleChange={handleChange} />
            
             {/* Leading Control */}
-            <Control key={5} name="leading" htmlFor="leading" label="Leading" type="range" min={0.75} max={2.5} step={0.25} defaultValue={1.5} value={leading} handleChange={handleChange}  />
+            <Control key={5} name="leading" htmlFor="leading" label="Leading" type="range" min={0.75} max={2.5} step={0.01} defaultValue={1.5} value={leading} handleChange={handleChange}  />
             
             {/* Italic Control */}
             <Control key={6} name="italic" handleChange={handleChange} checked={italic} htmlFor="italic" label="Italic" type="checkbox" />
@@ -41,7 +41,7 @@ const ControlPanel = ({ handleChange, sentence, typeSize, leading, italic, typef
 export default ControlPanel;
 
 
-const Control = ({htmlFor, type, name, label, placeholder, handleChange, value, options, min, max, checked, typeFace}) => {
+const Control = ({htmlFor, type, name, label, placeholder, handleChange, value, options, min, max, checked,  step}) => {
     
     return ( 
         <div className="control">
@@ -63,7 +63,7 @@ const Control = ({htmlFor, type, name, label, placeholder, handleChange, value, 
                             ( 
                                 <>
                                 <label htmlFor={htmlFor}>{label} <span>{label === 'Type size' ? `${value}px` : value}</span></label>
-                                <input step={name === 'leading' ? 0.01 : ''} min={min} max={max} value={value} onChange={handleChange} placeholder={placeholder}  type={type} name={name}/> 
+                                <input step={step} min={min} max={max} value={value} onChange={handleChange} placeholder={placeholder}  type={type} name={name}/> 
                                 </>
                             )
                                 : 

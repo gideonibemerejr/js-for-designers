@@ -20,6 +20,11 @@ label {
   margin-bottom: 0.5rem;
 }
 
+label span {
+  float: right;
+  font-style: italic;
+}
+
 input[type='range'],
 input[type='text'],
 select {

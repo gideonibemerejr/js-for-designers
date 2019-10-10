@@ -17,6 +17,8 @@
   src: url('./assets/faune-bold.woff'), url('./assets/faune-bold.woff2');
 }
 
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Taviraj:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Trirong:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
 div.type-checker--wrapper > h1 {
   font-weight: 700;
   font-size: 1.5rem;

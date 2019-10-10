@@ -2,7 +2,7 @@ import React from 'react'
 import './Output.css'
 
 
-const Output = ({sentence, defaultSentence, handleChange, typeSize, leading}) => {
+const Output = ({sentence, defaultSentence, handleChange, typeSize, leading, italic, typeFace}) => {
     return (
         <section className="text-output--wrapper">
             <textarea 
@@ -13,6 +13,8 @@ const Output = ({sentence, defaultSentence, handleChange, typeSize, leading}) =>
             style={{
                 fontSize: `${typeSize}px`,
                 lineHeight: leading,
+                fontStyle: `${italic ? 'italic' : 'normal'}`,
+                fontFamily: typeFace
             }}
             />
         </section> 

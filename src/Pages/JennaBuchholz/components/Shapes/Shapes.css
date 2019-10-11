@@ -1,0 +1,18 @@
+div.JB-square {
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top: 50px;
+  left: -50px;
+}
+
+div.JB-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  bottom: 50px;
+  right: -50px;
+
+  position: absolute;
+}

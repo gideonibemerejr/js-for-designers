@@ -1,0 +1,16 @@
+section.JB-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 80px;
+}
+
+div.JB-content {
+  position: relative;
+}
+
+div.JB-content img {
+  position: relative;
+}

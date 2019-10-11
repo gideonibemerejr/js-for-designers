@@ -1,0 +1,6 @@
+header.JB-header {
+  position: fixed;
+  top: 36px;
+  left: 36px;
+  z-index: 1;
+}

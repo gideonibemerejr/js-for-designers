@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('./assets/hk-grotesk.woff2'), url('./assets/hk-grotesk.woff');
+}
+
+div.jenna-buchholz--wrapper {
+  font-family: 'HK Grotesk';
+  line-height: 1.25;
+}
+
+div.jenna-buchholz--wrapper h1,
+div.jenna-buchholz--wrapper h2 {
+  font-size: 36px;
+}

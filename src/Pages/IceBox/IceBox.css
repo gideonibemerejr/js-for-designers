@@ -18,6 +18,15 @@ div.icebox {
 
   font-size: calc(10px + 1vmin);
 }
+
+div.icebox h1,
+div.icebox section {
+  margin-bottom: 1.5rem;
+}
+
+div.icebox h2 {
+  margin-bottom: 0.5rem;
+}
 main {
   flex-direction: column;
   max-width: 768px;
@@ -32,4 +41,7 @@ nav ul {
 }
 nav ul a {
   display: inline-block;
+}
+div.icebox section ul {
+  margin-top: 0;
 }

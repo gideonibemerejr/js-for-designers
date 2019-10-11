@@ -14,7 +14,7 @@ const data = [
     {
         title: 'Jenna Buchholz',
         description: 'With this project, we go in depth into scroll events and parallax by adding progress bars, waypoints and thresholds.',
-        image: './assets/jenna-buchholz/assets/jenna-buchholz.png',
+        image: './assets/jenna-buchholz/jenna-buchholz.png',
         link: '/jenna-buchholz',
     },
     {

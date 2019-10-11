@@ -6,9 +6,16 @@
 div.jenna-buchholz--wrapper {
   font-family: 'HK Grotesk';
   line-height: 1.25;
+  height: 100vh;
+  width: auto;
+  overflow: auto;
 }
 
 div.jenna-buchholz--wrapper h1,
 div.jenna-buchholz--wrapper h2 {
   font-size: 36px;
+}
+
+div.jenna-buchholz--wrapper img {
+  max-width: 100%;
 }

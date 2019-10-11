@@ -8,17 +8,36 @@ import { clients } from './data'
 class JennaBuchholz extends Component {
     state = { 
         clients,
+        pageScroll: 0,
+
      }
 
+
+    removeSpaces = (name) => {
+        return name.replace(/\s/g, '')
+    } 
+
+    handleScroll = (e) => {
+        
+        console.log('Scrolling')
+    }
+
+    // componentDidMount() {
+    //     document.addEventListener('scroll', this.handleScroll)
+    // }
+    // componentWillUnmount() {
+    //     document.removeEventListener('scroll', this.handleScroll)
+    // }
     render() { 
         return ( 
-        <div className="jenna-buchholz--wrapper">
+        <div onScroll={this.handleScroll.bind(this)} className="jenna-buchholz--wrapper">
             <Header {...this.state}/>
            {clients.map((client) => {
-               const { name, backgroundColors, circle, square } = client
+               let { name, backgroundColors, circle, square } = client
+               name = this.removeSpaces(name)
                return (
                    client.photos.map((photo, idx) => (
-                       <Section key={idx} circle={circle[idx]} square={square[idx]} backgroundColor={backgroundColors[idx]} client={name} photo={photo}/>
+                       <Section imageNo={idx + 1} key={photo} circle={circle[idx]} square={square[idx]} backgroundColor={backgroundColors[idx]} client={name} photo={photo}/>
                    ))
                )
            })}

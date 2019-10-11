@@ -7,8 +7,8 @@
 }
 
 div.icebox,
-main,
-header {
+div.icebox main,
+div.icebox header {
   display: flex;
 }
 
@@ -27,19 +27,19 @@ div.icebox section {
 div.icebox h2 {
   margin-bottom: 0.5rem;
 }
-main {
+div.icebox main {
   flex-direction: column;
   max-width: 768px;
 }
-header {
+div.icebox header {
   flex-direction: column;
 }
-nav ul {
+div.icebox nav ul {
   list-style: none;
 
   padding: 0;
 }
-nav ul a {
+div.icebox nav ul a {
   display: inline-block;
 }
 div.icebox section ul {

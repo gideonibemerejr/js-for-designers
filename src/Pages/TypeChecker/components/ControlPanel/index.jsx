@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './ControlPanel.css'
 
-const ControlPanel = ({ handleChange, sentence, typeSize, leading, italic, typefaces, typeFace, fontWeight}) => {
+const ControlPanel = ({ handleChange, sentence, typeSize, leading, italic, typefaces, typeFace, fontWeight, bgColors, backgroundColor}) => {
     return ( 
         <section className="control-panel--wrapper">
             <h1>Type Checker</h1>
@@ -28,11 +29,27 @@ const ControlPanel = ({ handleChange, sentence, typeSize, leading, italic, typef
             <div className="control">
                 <label htmlFor="colors">Colors</label>
                 <div name="colors" className="colors">
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
-                    <p>a</p>
+                    {bgColors.map(color => 
+                        (
+                            <button
+                            onClick={handleChange} 
+                            key={color}
+                            name="backgroundColor"
+                            className={backgroundColor === color ? 'selected' : ''}
+                            style={{ backgroundColor: color, color: `${color === 'rgb(42, 42, 42)' || color === 'rgb(155, 81, 224)' ? 'rgb(255, 255, 255)' : 'rgb(42, 42, 42)'}`}}>
+                                a
+                            </button>    
+                        )
+                    
+                    )}
+                  
                 </div>
+            </div>
+            <div className="back">
+                back to
+                <Link className='HomePage-link' to="/">
+                    <h2>JS for Designers</h2>
+                </Link>
             </div>
         </section>
      );
@@ -53,7 +70,7 @@ const Control = ({htmlFor, type, name, label, placeholder, handleChange, value, 
                         <>
                         <label htmlFor={htmlFor}>{label}</label>
                         <select name={name} value={value} onChange={handleChange}> 
-                            {options.map(option => <option value={option}>{option}</option>)} 
+                            {options.map(option => <option key={option} value={option}>{option}</option>)} 
                         </select>
                         </>
                     ) 

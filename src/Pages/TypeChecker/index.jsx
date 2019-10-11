@@ -13,17 +13,16 @@ class TypeChecker extends Component {
         typefaces: ['Fira Sans', 'Montserrat', 'Taviraj', 'Trirong'],
         leading: 1.5,
         italic: false,
-        colors: [],
-        activeColor: '',
+        bgColors: ['rgb(42, 42, 42)', 'rgb(255, 255, 255)', 'rgb(155, 81, 224)', 'rgb(242, 153, 74)', 'rgb(165, 207, 111)'],
+        backgroundColor: 'rgb(42, 42, 42)',
 
      }
 
     //  Handle the input tags in the Control components' onChange props using computed properties
     // * With this method, you do not have to create multiple functions to update state
     handleChange = e => {
-        const value = e.currentTarget.type === 'checkbox' ? e.currentTarget.checked : e.currentTarget.value 
+        const value = e.currentTarget.type === 'checkbox' ? e.currentTarget.checked : e.currentTarget.name === 'backgroundColor' ? e.currentTarget.style.backgroundColor : e.currentTarget.value 
 
-        console.log(e.currentTarget.value)
 
         this.setState({
             
@@ -36,8 +35,9 @@ class TypeChecker extends Component {
     }
     
 
-    render() { 
-        console.log('line 40', this.state.typeFace)
+    render() {
+        console.log(this.state.backgroundColor)
+
         return ( 
             <div className="type-checker--wrapper">
 

@@ -34,5 +34,5 @@ textarea.text-output {
   outline: none;
   min-height: 100vh;
   padding: 40px;
-  transition: font-weight 0.1s, font-size 0.1s;
+  transition: background-color 0.5s, font-weight 0.1s, font-size 0.1s;
 }

@@ -31,17 +31,6 @@ code {
 .HomePage > blockquote {
   margin: 0 1rem 0 1rem;
 }
-.HomePage-header {
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: url('https://imgur.com/dVFsaKI.png');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-  margin-top: 2rem;
-}
 
 .HomePage-navbar {
   display: flex;
@@ -69,7 +58,17 @@ code {
 .HomePage-projects-list {
   padding: 0 4rem;
 }
-
+.HomePage-header {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('https://imgur.com/dVFsaKI.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  padding-top: 2rem;
+}
 .HomePage-projects-list {
   padding-top: 4rem;
   background-color: #282c34;
@@ -153,7 +152,8 @@ code {
 
   padding-bottom: 4rem;
 }
-li > a.HomePage-link {
+li > a.HomePage-link,
+div.back > a.HomePage-link {
   text-decoration: none;
 }
 

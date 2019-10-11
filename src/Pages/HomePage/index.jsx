@@ -51,7 +51,7 @@ const HomePage = () => {
         <main id="Projects" className="HomePage-projects-list">
           <div  className="HomePage-section-heading">
           <h2>Projects</h2>
-          <p>These projects were completed with <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com"><i>SuperHi</i></a>'s <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com/courses/javascript-for-designers"><i>Javascript for Designers</i></a> course and extended using React. Checkout the Github repository for this entire project <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://github.com/gideonibemerejr/js-for-designers"><i>here</i></a>.</p>
+          <p>These projects were completed with <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com"><i>SuperHi</i></a>'s <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com/courses/javascript-for-designers"><i>Javascript for Designers</i></a> course and extended using React. Checkout the Github repository for this entire project <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://github.com/gideonibemerejr/js-for-designers"><i>here</i></a>. <br/> <br />Some of these projects are not mobile responsive, however, check back soon for updates!</p>
           </div>
           {
             data.map((project, idx) => (

@@ -18,6 +18,9 @@ const HomePage = () => {
               <li>
                 <a className="HomePage-link" href="#Projects">Projects</a> 
               </li>
+              <li>
+                <a className="HomePage-link" href="/icebox.html">IceBox</a> 
+              </li>
     
               
             </ul>
@@ -31,7 +34,8 @@ const HomePage = () => {
               </h1>
               <p>
             
-              In a short course by <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com"><i>SuperHi</i></a>, I learned how to work with Javascript in a creative, fun way aimed at people who design. Then, I used <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org"><i>React</i></a> to implement extra features outside of the SuperHi scope.
+              With a short course by <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com"><i>SuperHi</i></a>, I learned how to work with Javascript in a creative, fun way aimed at people who design. After each lession, I refactored and added to each application with <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org"><i>React</i></a>.
+          
               
               </p>
               <blockquote cite="https://www.superhi.com/courses/javascript-for-designers">
@@ -48,7 +52,7 @@ const HomePage = () => {
             <a  href="#Projects"><img src="./assets/chevron-down.svg" alt="Chevron Down"/></a>
           </section>
         </header>
-        <main id="Projects" className="HomePage-projects-list">
+        <section id="Projects" className="HomePage-projects-list">
           <div  className="HomePage-section-heading">
           <h2>Projects</h2>
           <p>These projects were completed with <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com"><i>SuperHi</i></a>'s <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://www.superhi.com/courses/javascript-for-designers"><i>Javascript for Designers</i></a> course and extended using React. Checkout the Github repository for this entire project <a className="HomePage-link" target="_blank" rel="noopener noreferrer" href="https://github.com/gideonibemerejr/js-for-designers"><i>here</i></a>. <br/> <br />Some of these projects are not mobile responsive, however, check back soon for updates!</p>
@@ -71,9 +75,10 @@ const HomePage = () => {
           
             ))
           }
-            
           
-          </main>
+          
+          </section>
+          
           {/* <footer>
             <section>
               <h4>

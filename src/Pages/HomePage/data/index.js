@@ -1,13 +1,13 @@
 const data = [
     {
         title: 'Plant Life',
-        description: 'We go further with Javascript events by adding in click, mouseover and mouseout events, plus talking about how to add randomness into our design work.',
+        description: 'Plant life is a shop for botanicals. The shop sells indoor + outdoor plants, extracts + essential oils, and CBD. This project explores click events + randomness in vanilla Javascript and refs from the popular javascript framework, React.',
         image: './assets/plant-life/plant-life.png',
         link: '/plant-life',
     },
     {
         title: 'Type Checker',
-        description: 'With Type Checker, we discuss how to work with form tags such as inputs, sliders, checkboxes and select boxes to build up interactivity to our projects.',
+        description: 'Type Checker\'s functionality is a tool that functions as a typeface playground. With Type Checker, I worked on controlled inputs types such as text, textarea, range, select, and checkbox to build up interactivity.',
         image: './assets/type-checker/type-checker.png',
         link: '/type-checker',
     },

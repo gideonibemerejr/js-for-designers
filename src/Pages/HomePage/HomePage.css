@@ -199,7 +199,12 @@ div.back > a.HomePage-link {
 
 @media screen and (max-width: 579px) {
   .HomePage-header {
-    padding: 0 2rem;
+    padding: 2rem 2rem;
+  }
+  .HomePage-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .HomePage-projects-list {

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-font-smoothing: antialiased;
+                text-rendering: optimizeLegibility;
+            }
+            body,
+            main,
+            header {
+                display: flex;
+            }
+            body {
+
+                justify-content: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                height: 100%;
+
+                font-size: calc(10px + 1vmin);
+            }
+            main {
+
+                flex-direction: column;
+                max-width: 768px;
+            }
+            header {
+                flex-direction: column;
+
+            }
+            nav ul {
+                list-style: none;
+
+                padding: 0;
+            }
+            nav ul a {
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="/">Back to JS For Designers</a></li>
+                    </ul>
+                </nav>
+                <h1>JS for Designers Ice Box</h1>
+                <section>
+                    <article>
+                        <h2>What is an Ice Box?</h2>
+                        <p>The icebox is a place where feature ideas are held, in a queue, waiting to be created. Think of it like a wishlist. The ideas in it are probably great, but not necessities to the core functionality of the entire product/project</p>
+                    </article>
+                </section>
+            </header>
+
+            <section>
+                <h2>Ice Box Feature List</h2>
+                <ul>
+                    <li>
+                        <p>Node.JS Backend for all of the SuperHi projects</p>
+                    </li>
+                    <li>
+                        <p>GraphQL queries on the front end instead of REST</p>
+                    </li>
+                    <li>
+                        <p>Flask Backend for the next SuperHi series</p>
+                    </li>
+                    <li>
+                        <p>Footer at the bottom with site navigation</p>
+                    </li>
+                    <li>
+                        <p>Add Full shop functionality with fake checkout to Plant Life</p>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+    </body>
+</html>

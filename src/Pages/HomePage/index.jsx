@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Circle } from '../../Components'
 import data from './data'
 import './HomePage.css';
@@ -19,7 +19,7 @@ const HomePage = () => {
                 <a className="HomePage-link" href="#Projects">Projects</a> 
               </li>
               <li>
-                <a className="HomePage-link" href="/icebox.html">IceBox</a> 
+                <Link className="HomePage-link" to="/icebox">IceBox</Link> 
               </li>
     
               

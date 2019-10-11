@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import {HomePage, PlantLife, TypeChecker, JennaBuchholz, Brux, WordsOfWomxn} from './Pages'
+import {HomePage, PlantLife, TypeChecker, JennaBuchholz, Brux, WordsOfWomxn, IceBox} from './Pages'
 
 
 
@@ -12,6 +12,9 @@ function App() {
       <Switch>
         {/* Route to Home Page: "JS for Designers" */}
         <Route exact path="/" component={HomePage} />
+
+        {/*  Route to Ice Box Page */}
+        <Route path="/icebox" component={IceBox} />
 
         {/* Route to Plant Life Page */}
         <Route 

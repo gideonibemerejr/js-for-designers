@@ -8,7 +8,7 @@
   src: url(./assets/youngserif.woff), url(./assets/youngserif.woff2);
 }
 
-body {
+.PL-wrapper {
   overflow-x: hidden;
 }
 

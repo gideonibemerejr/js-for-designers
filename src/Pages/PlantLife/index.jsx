@@ -20,7 +20,7 @@ class PlantLife extends Component {
 
     render() { 
         return ( 
-            <>
+            <div className="PL-wrapper">
             <div className="PL-mobile-error">
             <h1>Oops!</h1>
             <h2>This site is best viewed on a desktop or laptop</h2>
@@ -51,7 +51,7 @@ class PlantLife extends Component {
                 </Switch>
             </main>
             </div>
-            </>
+            </div>
          );
     }
 }

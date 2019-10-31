@@ -4,12 +4,11 @@ import { Square, Circle } from '../Shapes'
 import './Section.css'
 
 
-const Section = ({ client, imageNo, circle, square, photo, backgroundColor }) => {
-    return ( 
-        <section className={`JB-section ${client}${imageNo}`} style={{backgroundColor}} >
+const Section = React.forwardRef(({ client, imageNo, circle, square, photo, backgroundColor, c }, ref) => (
+    <section ref={ref} data-client={client} data-page={imageNo % 2 === 0 ? '2 / 2' : '1 / 2'} className={`JB-section ${client}${imageNo}`} style={{backgroundColor}} >
             <div className="JB-content">
             {
-                   client === 'AlterEgo' && imageNo === 1  ? 
+                   c === 'AlterEgo' && imageNo === 1  ? 
                    (
                     <>
                     <Square backgroundColor={square}/>
@@ -32,7 +31,8 @@ const Section = ({ client, imageNo, circle, square, photo, backgroundColor }) =>
                 
             </div>
         </section>
-     );
-}
- 
+
+))
+
+
 export default Section;

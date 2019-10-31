@@ -7,3 +7,7 @@ div.progress {
   z-index: 1;
   background-color: #333333;
 }
+
+div.progress.white {
+  background-color: #fff;
+}

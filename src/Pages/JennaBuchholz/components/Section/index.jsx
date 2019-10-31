@@ -5,7 +5,7 @@ import './Section.css'
 
 
 const Section = React.forwardRef(({ client, imageNo, circle, square, photo, backgroundColor, c }, ref) => (
-    <section ref={ref} data-client={client} data-page={imageNo % 2 === 0 ? '2 / 2' : '1 / 2'} className={`JB-section ${client}${imageNo}`} style={{backgroundColor}} >
+    <section ref={ref} data-client={client} data-page={imageNo % 2 === 0 ? '2 / 2' : '1 / 2'} data-is-dark={imageNo === 3 ? true : false} className={`JB-section ${client}${imageNo}`} style={{backgroundColor}} >
             <div className="JB-content">
             {
                    c === 'AlterEgo' && imageNo === 1  ? 

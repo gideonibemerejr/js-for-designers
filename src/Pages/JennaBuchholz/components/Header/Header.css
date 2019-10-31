@@ -4,3 +4,7 @@ header.JB-header {
   left: 36px;
   z-index: 1;
 }
+
+header.white {
+  color: white;
+}

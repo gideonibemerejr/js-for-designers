@@ -11,7 +11,8 @@ class JennaBuchholz extends Component {
         client: clients[0].name,
         pageScroll: 0,
         percentage: 0,
-        imageNo: '1 / 2'
+        imageNo: '1 / 2',
+        isDark: false
 
      }
 
@@ -29,7 +30,7 @@ class JennaBuchholz extends Component {
 
       
         this.setState({ pageScroll, percentage })
-
+        
         this.sections.forEach(section => {
             if (section.offsetTop - 60 <= pageScroll) {
                 this.setState(
@@ -38,7 +39,14 @@ class JennaBuchholz extends Component {
                         imageNo: section.getAttribute('data-page')
                     }
                 )
+               
+                
+                section.getAttribute('data-is-dark') === "true" ? this.setState({isDark: true}) : this.setState({isDark: false})
+                
+               
             }
+            
+
         })
         
         
@@ -58,7 +66,7 @@ class JennaBuchholz extends Component {
         
         return ( 
         <div className="jenna-buchholz--wrapper">
-            <ProgressBar percentage={this.state.percentage} />
+            <ProgressBar percentage={this.state.percentage} isDark={this.state.isDark}/>
             <Header {...this.state}/>
            {clients.map((client, clientIdx) => {
               let {name, backgroundColor, photo, square, circle } = client

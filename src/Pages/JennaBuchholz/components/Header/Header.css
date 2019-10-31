@@ -3,6 +3,7 @@ header.JB-header {
   top: 36px;
   left: 36px;
   z-index: 1;
+  transition: color 0.5s;
 }
 
 header.white {

@@ -46,9 +46,6 @@ p.PL-toggle-nav img {
   margin-right: 1rem;
   vertical-align: -15%;
 }
-.fade {
-  animation: fade 1s;
-}
 
 div.PL-mobile-error {
   display: flex;
@@ -67,15 +64,6 @@ div.PL-mobile-error > h1,
 div.PL-mobile-error > h2 {
   font-family: 'Young Serif';
   margin-bottom: 1rem;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @media (min-width: 900px) {

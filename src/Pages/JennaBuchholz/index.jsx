@@ -36,7 +36,7 @@ class JennaBuchholz extends Component {
     handleUpdatePageScrollAndProgressBar = () => {
 
         // distance from the top of the page
-        const pageScroll = window.pageYOffset
+        const pageScroll = Math.floor(window.pageYOffset)
 
         // height of the entire page above and below "the fold"
         const pageHeight = window.document.body.getBoundingClientRect().height

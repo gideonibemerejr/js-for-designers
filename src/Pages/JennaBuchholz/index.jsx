@@ -23,14 +23,28 @@ class JennaBuchholz extends Component {
     sections = []
 
     handleScroll = (e) => {
-        let pageScroll = window.pageYOffset
+        this.handleUpdatePageScrollAndProgressBar()
+        this.handleUpdateClientInfo()
+        
+    
+
+        
+        
+        
+    }
+
+    handleUpdatePageScrollAndProgressBar = () => {
+        const pageScroll = window.pageYOffset
         const pageHeight = window.document.body.getBoundingClientRect().height
         const totalScrollableDistance = pageHeight - window.innerHeight 
         const percentage = Math.floor(pageScroll / totalScrollableDistance * 100)
 
       
         this.setState({ pageScroll, percentage })
-        
+    }
+
+    handleUpdateClientInfo = () => {
+        const pageScroll = window.pageYOffset
         this.sections.forEach(section => {
             if (section.offsetTop - 60 <= pageScroll) {
                 this.setState(
@@ -48,13 +62,16 @@ class JennaBuchholz extends Component {
             
 
         })
-
-        
-        
-        
     }
-    
-    handleParallax
+
+    handleParallax = () => {
+        // TODO: When the page scrolls, make things parallax
+        // this is the distance from the top
+        const topViewport = window.pageYOffset
+        // TODO: Want to move certain tags, based on how far they are from an anchor point
+        // TODO: What is the anchor? Well, its the middle of the section
+        // TODO: How far should it parallax? Well, its a ratio of the middle distance scrolled to the middle point of the anchor
+    }
 
     componentDidMount() {
      window.addEventListener('scroll', this.handleScroll)

@@ -4,7 +4,7 @@ import { Square, Circle } from '../Shapes'
 import './Section.css'
 
 
-const Section = React.forwardRef(({ client, imageNo, circle, square, photo, backgroundColor, c }, ref) => {
+const Section = React.forwardRef(({ client, imageNo, circle, square, photo, backgroundColor, c, parallaxSquare, parallaxCircle }, ref) => {
     const dataDark = imageNo === 3 ? true : false
     return (
     <section 
@@ -20,17 +20,17 @@ const Section = React.forwardRef(({ client, imageNo, circle, square, photo, back
                 c === 'AlterEgo' && imageNo === 1  ? 
                 (
                 <>
-                <Square backgroundColor={square}/>
+                <Square parallaxSquare={parallaxSquare} backgroundColor={square}/>
                     <img src={photo} alt=""/>
-                <Circle backgroundColor={circle} />
+                <Circle parallaxCircle={parallaxCircle} backgroundColor={circle} />
                 </>
                 ) 
                 :  
                 (
                 <>
-                <Circle backgroundColor={circle} />
+                <Circle parallaxCircle={parallaxCircle} backgroundColor={circle} />
                     <img src={photo} alt=""/>
-                <Square backgroundColor={square}/>
+                <Square parallaxSquare={parallaxSquare} backgroundColor={square}/>
                 </>
                 
                 )

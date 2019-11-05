@@ -20,15 +20,16 @@ class JennaBuchholz extends Component {
     removeSpaces = (name) => {
         return name.replace(/\s/g, '')
     } 
+
     sections = []
 
     handleScroll = (e) => {
         this.handleUpdatePageScrollAndProgressBar()
         this.handleUpdateClientInfo()
+        this.handleParallax()
         
         
-        
-        
+         
     }
 
     // * This method handles the state update for the pagescroll distance and progress bar percentage
@@ -79,14 +80,39 @@ class JennaBuchholz extends Component {
 
         })
     }
-
+    
+    
+    // TODO: When the page scrolls, make things parallax
+    // TODO: Want to move certain tags, based on how far they are from an anchor point
+    // TODO: What is the anchor? Well, its the middle of the section
+    // TODO: How far should it parallax? Well, its a ratio of the middle distance scrolled to the middle point of the anchor
     handleParallax = () => {
-        // TODO: When the page scrolls, make things parallax
         // this is the distance from the top
-        const topViewport = window.pageYOffset
-        // TODO: Want to move certain tags, based on how far they are from an anchor point
-        // TODO: What is the anchor? Well, its the middle of the section
-        // TODO: How far should it parallax? Well, its a ratio of the middle distance scrolled to the middle point of the anchor
+        const viewportTop = window.pageYOffset
+        
+        // this is the topViewport plus half the height of the page
+        const viewportMid = viewportTop + (window.innerHeight / 2)
+
+        // select the sections ref array and do something for each of the sections
+        this.sections.forEach(section => {
+
+            // top of each section
+            const sectionTop = section.offsetTop
+
+            // midpoint of each section
+            const sectionMid = sectionTop + (section.offsetHeight / 2)
+
+            // distance from the section to the viewportMid
+            const distanceToSection = viewportMid - sectionMid
+
+            // select the square tag
+            const tag = section.querySelector('div.JB-square')
+
+            // select the 
+
+            tag.style.transform = `translate(0, ${distanceToSection * 0.10}px)`
+        })
+       
     }
 
     componentDidMount() {
@@ -105,7 +131,7 @@ class JennaBuchholz extends Component {
             <ProgressBar percentage={this.state.percentage} isDark={this.state.isDark}/>
             <Header {...this.state}/>
            {clients.map((client, clientIdx) => {
-              let {name, backgroundColor, photo, square, circle } = client
+              let {name, backgroundColor, photo, square, circle, parallaxCircle, parallaxSquare } = client
               let c = this.removeSpaces(name)
             return (
                 <Section 
@@ -118,6 +144,8 @@ class JennaBuchholz extends Component {
                 circle={circle}
                 square={square}
                 ref={(ref) => {this.sections[clientIdx] = ref}}
+                parallaxCircle={parallaxCircle}
+                parallaxSquare={parallaxSquare}
                 />
             )
            })}

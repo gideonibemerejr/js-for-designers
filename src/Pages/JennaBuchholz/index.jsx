@@ -106,11 +106,12 @@ class JennaBuchholz extends Component {
             const distanceToSection = viewportMid - sectionMid
 
             // select the square tag
-            const tag = section.querySelector('div.JB-square')
+            const squareTag = section.querySelector('div.JB-square')
 
-            // select the 
+            // select the data-parallax of the tag
+            const squareSpeed = parseFloat(squareTag.getAttribute('data-parallax'))
 
-            tag.style.transform = `translate(0, ${distanceToSection * 0.10}px)`
+            squareTag.style.transform = `translate(0, ${distanceToSection * squareSpeed}px)`
         })
        
     }

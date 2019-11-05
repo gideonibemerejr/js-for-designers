@@ -26,27 +26,43 @@ class JennaBuchholz extends Component {
         this.handleUpdatePageScrollAndProgressBar()
         this.handleUpdateClientInfo()
         
-    
-
         
         
         
     }
 
+    // * This method handles the state update for the pagescroll distance and progress bar percentage
     handleUpdatePageScrollAndProgressBar = () => {
+
+        // distance from the top of the page
         const pageScroll = window.pageYOffset
+
+        // height of the entire page above and below "the fold"
         const pageHeight = window.document.body.getBoundingClientRect().height
+
+        // total scrollable distance of the page
         const totalScrollableDistance = pageHeight - window.innerHeight 
+
+        // percentage of the total scrollable distance scrolled already
         const percentage = Math.floor(pageScroll / totalScrollableDistance * 100)
 
-      
+        // update values on state object with same name
         this.setState({ pageScroll, percentage })
     }
 
+    // * This method handles the state update for the active client and image/slide number
     handleUpdateClientInfo = () => {
+
+        // distance from the top of the page
         const pageScroll = window.pageYOffset
+
+        // select the sections ref array and do something for each of the sections
         this.sections.forEach(section => {
+
+            // checking to see if the offsetTop of the current section minus 60 is less than or equal to the pageScroll distance
             if (section.offsetTop - 60 <= pageScroll) {
+
+                // if the above check is true, set state.client to the current section tag's data-client attribute and state.imageNo to the section tag's data-page attribute
                 this.setState(
                     {
                         client: section.getAttribute('data-client'),
@@ -54,7 +70,7 @@ class JennaBuchholz extends Component {
                     }
                 )
                
-                
+                // this ternary expression is checking for a "true" data-is-dark string on the current section. If its true it updates state.isDark to true, if not it sets state.isDark to false.
                 section.getAttribute('data-is-dark') === "true" ? this.setState({isDark: true}) : this.setState({isDark: false})
                 
                

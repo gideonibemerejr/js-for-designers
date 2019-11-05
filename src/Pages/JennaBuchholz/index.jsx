@@ -23,13 +23,8 @@ class JennaBuchholz extends Component {
     sections = []
 
     handleScroll = (e) => {
-        let pageScroll = window.pageYOffset
-        const pageHeight = window.document.body.getBoundingClientRect().height
-        const totalScrollableDistance = pageHeight - window.innerHeight 
-        const percentage = Math.floor(pageScroll / totalScrollableDistance * 100)
-
-      
-        this.setState({ pageScroll, percentage })
+       
+        this.handleScrollDistanceAndProgress()
         
         this.sections.forEach(section => {
             if (section.offsetTop - 60 <= pageScroll) {
@@ -48,11 +43,25 @@ class JennaBuchholz extends Component {
             
 
         })
+
+        
         
         
     }
-    
 
+    handleScrollDistanceAndProgress = () => {
+        let pageScroll = window.pageYOffset
+        const pageHeight = window.document.body.getBoundingClientRect().height
+        const totalScrollableDistance = pageHeight - window.innerHeight 
+        const percentage = Math.floor(pageScroll / totalScrollableDistance * 100)
+
+      
+        this.setState({ pageScroll, percentage })
+    }
+    
+    handleParallaxScroll = () => {
+        
+    }
     componentDidMount() {
      window.addEventListener('scroll', this.handleScroll)
      

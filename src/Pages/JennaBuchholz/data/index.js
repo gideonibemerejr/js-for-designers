@@ -6,7 +6,7 @@ const clients = [
         square: '#d54156',
         circle: '#5982a0',
         parallaxSquare: 0.1,
-        parallaxCircle: 0,
+        parallaxCircle: -0.1,
     },
     {
         name: 'Alter Ego',
@@ -15,7 +15,7 @@ const clients = [
         square: '#d6ac35',
         circle: '#be3c52',
         parallaxSquare: 0.2,
-        parallaxCircle: 0,
+        parallaxCircle: -0.2,
         
     },
     {
@@ -25,7 +25,7 @@ const clients = [
         square: '#5f3736', 
         circle: '#6e5f67',
         parallaxSquare: 0.4,
-        parallaxCircle: 0,
+        parallaxCircle: -0.4,
     },
     {
         name: 'Valencia Clothing',
@@ -34,7 +34,7 @@ const clients = [
         square: '#6e5f67',
         circle: '#5982a0',
         parallaxSquare: 0.1,
-        parallaxCircle: 0,
+        parallaxCircle: 0.25,
         
     },
    

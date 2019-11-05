@@ -73,19 +73,11 @@ class JennaBuchholz extends Component {
                
                 // this ternary expression is checking for a "true" data-is-dark string on the current section. If its true it updates state.isDark to true, if not it sets state.isDark to false.
                 section.getAttribute('data-is-dark') === "true" ? this.setState({isDark: true}) : this.setState({isDark: false})
-                
-               
             }
-            
-
         })
     }
-    
-    
-    // TODO: When the page scrolls, make things parallax
-    // TODO: Want to move certain tags, based on how far they are from an anchor point
-    // TODO: What is the anchor? Well, its the middle of the section
-    // TODO: How far should it parallax? Well, its a ratio of the middle distance scrolled to the middle point of the anchor
+
+    // * This method handles the parallax logic for the entire page
     handleParallax = () => {
         // this is the distance from the top
         const viewportTop = window.pageYOffset
@@ -105,28 +97,30 @@ class JennaBuchholz extends Component {
             // distance from the section to the viewportMid
             const distanceToSection = viewportMid - sectionMid
 
-            // select the square tag
-            const squareTag = section.querySelector('div.JB-square')
+            // all the HTML tags with a data-parallax attribute
+            const parallaxTags = section.querySelectorAll(`[data-parallax]`)
 
-            // select the data-parallax of the tag
-            const squareSpeed = parseFloat(squareTag.getAttribute('data-parallax'))
+            // loop over all the tags with data-parallax attribute
+            parallaxTags.forEach(tag => {
 
-            squareTag.style.transform = `translate(0, ${distanceToSection * squareSpeed}px)`
+                // select the data-parallax of the tag
+                const speed = parseFloat(tag.getAttribute('data-parallax'))
+
+                // add transform, translate to style of said tag for parallax action
+                tag.style.transform = `translate(0, ${distanceToSection * speed}px)`
+            })
         })
-       
     }
 
     componentDidMount() {
      window.addEventListener('scroll', this.handleScroll)
-     
     }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll)
     }
-    render() { 
 
-        
+    render() { 
         return ( 
         <div className="jenna-buchholz--wrapper">
             <ProgressBar percentage={this.state.percentage} isDark={this.state.isDark}/>

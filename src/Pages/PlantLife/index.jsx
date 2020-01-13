@@ -37,7 +37,7 @@ class PlantLife extends Component {
                         ) : (
 <>
                             <img src={open} alt=""/>
-                            Menu
+                            Info
                             </>
                         )
                     }

@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 "Despite being used on pretty much every website on the internet, Javascript is actually one of the tougher languages to learn. In this short course, we specifically talk about Javascript targeted towards what a creative professional would use it for – functional and fun, interactive websites." - taken from [SuperHi](https://superhi.com)'s short description of the course.
 
-Each project is created as a separate React Component held in the `Pages/` directory and is a separate lesson covering important javascript fundamentals when coding and designing the front-end of a web application. Check their descriptions below for an deeper understanding.
+Each project is created as a separate React Component held in the `Pages/` directory and is a separate lesson covering important javascript fundamentals when coding and designing the front-end of a web application. Check their descriptions below for a deeper understanding.
 
 ### Learning Objectives
 
